@@ -1,0 +1,261 @@
+{
+  "site": {
+    "name": "North Coaching Performance",
+    "shortName": "NCP",
+    "tagline": "Präzision. Richtung. Resilienz."
+  },
+  "hero": {
+    "title": "Elite Performance Coaching",
+    "tagline": "Für Athlet:innen, Führungskräfte und High Performer.",
+    "pitchLine": "Strukturierte Begleitung für Athlet:innen und Führungskräfte—von der Vorbereitung bis zum Renntag.",
+    "raceWeekendLine": "Support an Renn-/Wettkampfwochenenden (auf Anfrage).",
+    "valueProposition": "Präzision. Richtung. Resilienz.",
+    "ctaPrimary": "Kennenlern-Call buchen",
+    "ctaSecondary": "Programme ansehen"
+  },
+  "about": {
+    "title": "Über",
+    "founder": {
+      "name": "Charles North",
+      "title": "Sportphysiotherapeut & Performance Coach",
+      "location": "Schweiz",
+      "bio": "Charles arbeitet mit Spitzensportler:innen und Führungskräften auf Basis einer evidenzbasierten, strukturierten Arbeitsweise. Hohe Standards, Messbarkeit und Diskretion prägen die Zusammenarbeit."
+    },
+    "credentialsTitle": "Ausbildung & Zertifizierungen",
+    "credentials": [
+      { "period": "Sep 2025 – Heute", "title": "Hintsa Performance Coach Zertifizierung", "organisation": "" },
+      { "period": "Jan 2023 – Jan 2024", "title": "Evidence-Based Praxis Training", "organisation": "Berner Fachhochschule, Schweiz" },
+      { "period": "Feb 2023", "title": "Sportphysiotherapeut", "organisation": "K-LYF" },
+      { "period": "Nov 2021 – Juni 2022", "title": "Sportphysiotherapeut", "organisation": "Kiné Pro-Sport, Strasbourg" },
+      { "period": "Juni 2022", "title": "Dry needling", "organisation": "IMTT, Zürich" },
+      { "period": "Jan 2022", "title": "Athletiktraining Fußball", "organisation": "Paolo Rongoni — ehem. Athletiktrainer, Olympique Lyonnais, OM, AS Roma" }
+    ],
+    "pillars": {
+      "title": "Unser Ansatz",
+      "assess": {
+        "title": "Assess",
+        "description": "Screenings, Tests und Ausgangswerte, um Ihr Leistungsprofil und Ihr Potenzial präzise zu verstehen."
+      },
+      "build": {
+        "title": "Build",
+        "description": "Individuell zugeschnittene Trainings- und Recovery-Strategie im Einklang mit Ihrem Kalender."
+      },
+      "sustain": {
+        "title": "Sustain",
+        "description": "Laufendes Monitoring, Anpassungen und Fokus auf nachhaltige Leistungsfähigkeit."
+      }
+    }
+  },
+  "whyNcp": {
+    "title": "Warum NCP",
+    "items": [
+      {
+        "title": "Evidenzbasiert",
+        "description": "Methoden auf Basis von Sportwissenschaft, Daten und Praxiserfahrung mit Leistungsträger:innen."
+      },
+      {
+        "title": "Elite-Umfeld",
+        "description": "Strukturen und Standards, die auf Hochleistungs- und Entscheidungssituationen ausgelegt sind."
+      },
+      {
+        "title": "Diskrete Partnerschaft",
+        "description": "Zurückhaltende, vertrauensbasierte Zusammenarbeit mit klarem Fokus auf Ergebnisse."
+      }
+    ]
+  },
+  "programs": {
+    "title": "Programme",
+    "subtitle": "Strukturierte Betreuung – abgestimmt auf Ihr gewünschtes Engagement.",
+    "tiers": [
+      {
+        "id": "athlete-performance",
+        "name": "Athlete Performance",
+        "description": "Remote-Betreuung für mehr Struktur und Accountability.",
+        "whoItsFor": "Athlet:innen und Führungskräfte, die mit klarer Struktur und wöchentlichem Check-in arbeiten möchten.",
+        "whatsIncluded": [
+          "Monatsplan mit Fokus auf Training und Regeneration",
+          "Individuelles Trainingsprogramm",
+          "Wöchentlicher Check-in",
+          "Support per Messaging"
+        ],
+        "expectedOutcomes": [
+          "Klarer Fahrplan und Accountability",
+          "Mehr Konstanz in Training und Regeneration",
+          "Solide Basis für Schlaf und Stressmanagement"
+        ],
+        "priceLabel": "Auf Anfrage",
+        "featured": false
+      },
+      {
+        "id": "advanced-athlete",
+        "name": "Advanced Athlete",
+        "description": "Hybrides Setup mit häufigeren Kontakten und optionalem Onsite-Assessment.",
+        "whoItsFor": "Athlet:innen, die engere Begleitung, Dateneinblick und schnellere Anpassungen wünschen.",
+        "whatsIncluded": [
+          "Alles aus Athlete Performance",
+          "Zweiwöchentliche Video-Calls",
+          "Wöchentliche Plananpassungen",
+          "Monitoring-Dashboard",
+          "Optionales Onsite-Assessment"
+        ],
+        "expectedOutcomes": [
+          "Schnellere Iteration der Strategie",
+          "Klares Bild von Belastung und Erholung",
+          "Stärkerer Abgleich mit den Zielen"
+        ],
+        "priceLabel": "Auf Anfrage",
+        "featured": true
+      },
+      {
+        "id": "motorsport-performance",
+        "name": "Motorsport Performance",
+        "description": "High-Touch-Betreuung für Motorsport-Umfelder.",
+        "whoItsFor": "Pilot:innen und Teams, die priorisierten Support inklusive Reise- und Rennwochenenden benötigen.",
+        "whatsIncluded": [
+          "Alles aus Advanced Athlete",
+          "Priorisierte Reaktions- und Terminfenster",
+          "Optionen für Rennwochenenden und Reisen",
+          "Feinabstimmung mit bestehendem Staff"
+        ],
+        "expectedOutcomes": [
+          "Optimale Vorbereitung für Schlüssel-Events",
+          "Reibungslose Abstimmung mit dem Rennkalender",
+          "Betreuung, die der Saison folgt"
+        ],
+        "priceLabel": "Auf Anfrage",
+        "featured": false
+      },
+      {
+        "id": "race-weekend-support",
+        "name": "Support Rennwochenenden",
+        "description": "Betreuung vor Ort und auf Reisen an Rennwochenenden. Koordination, Vorbereitung und Präsenz, wenn es darauf ankommt.",
+        "whoItsFor": "Athlet:innen und Teams, die dedizierte Betreuung an Rennwochenenden wünschen — Reise, Vor-Ort-Koordination und Vorbereitung.",
+        "whatsIncluded": [
+          "Unterstützung an Renn-/Wettkampfwochenenden (auf Anfrage)",
+          "Reise und Vor-Ort-Koordination",
+          "Vorbereitung vor dem Rennen und am Renntag",
+          "Flexibler Umfang pro Veranstaltung"
+        ],
+        "expectedOutcomes": [
+          "Optimale Vorbereitung bei Schlüsselereignissen",
+          "Reibungslose Logistik und Koordination",
+          "Fokussierte Betreuung zur rechten Zeit"
+        ],
+        "priceLabel": "Auf Anfrage",
+        "featured": false
+      }
+    ],
+    "faqTitle": "Häufige Fragen",
+    "faq": [
+      {
+        "question": "Wie lange dauert ein typisches Coaching?",
+        "answer": "Viele Klient:innen starten mit 3–6 Monaten. Der Rahmen kann an Ziele und Kalender angepasst werden."
+      },
+      {
+        "question": "Arbeiten Sie auch mit Teamsportler:innen?",
+        "answer": "Ja. NCP arbeitet mit Athlet:innen aus Individual- und Teamsport sowie mit Führungskräften in anspruchsvollen Rollen."
+      },
+      {
+        "question": "Ist die Zusammenarbeit vertraulich?",
+        "answer": "Ja. Diskretion ist zentral – Daten und Gespräche bleiben zwischen Ihnen und NCP."
+      },
+      {
+        "question": "Was passiert im Kennenlern-Call?",
+        "answer": "Ein 30–45-minütiges Gespräch, um Ziele, Kontext und das passende Format zu klären – unverbindlich."
+      }
+    ],
+    "labels": {
+      "whoItsFor": "Für wen",
+      "whatsIncluded": "Inhalte",
+      "expectedOutcomes": "Erwartete Ergebnisse",
+      "price": "Investition",
+      "popular": "Beliebt"
+    },
+    "ctaTitle": "Bereit für den nächsten Schritt?",
+    "ctaButton": "Kennenlern-Call buchen"
+  },
+  "booking": {
+    "title": "Kennenlern-Call buchen",
+    "subtitle": "Erstes Gespräch, um Ziele, Kontext und Passung des Coachings zu klären.",
+    "formTitle": "Call anfragen",
+    "nameLabel": "Name",
+    "namePlaceholder": "Ihr vollständiger Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "sie@example.com",
+    "phoneLabel": "Telefon / WhatsApp",
+    "phonePlaceholder": "+41 00 000 00 00",
+    "roleLabel": "Ich bin",
+    "roleOptions": ["Athlet:in", "Führungskraft", "Andere"],
+    "goalsLabel": "Ziele (kurz)",
+    "goalsPlaceholder": "Was möchten Sie verbessern?",
+    "availabilityLabel": "Verfügbarkeit",
+    "availabilityPlaceholder": "z.B. Vormittags unter der Woche",
+    "timezoneLabel": "Zeitzone",
+    "timezonePlaceholder": "z.B. Europe/Zurich",
+    "submitLabel": "Anfrage senden",
+    "successTitle": "Anfrage erhalten",
+    "successMessage": "Wir melden uns innerhalb von 24–48 Stunden zur Terminbestätigung.",
+    "submitAnotherRequest": "Weitere Anfrage senden",
+    "roleSelectPlaceholder": "Auswählen...",
+    "reassurance": "Vertraulich. Professionell. Antwort innerhalb von 24–48 Stunden.",
+    "confidentialityGuarantee": "Vertraulich. Unverbindlich. Antwort innerhalb von 24–48 Stunden."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Für Anfragen oder um ein Gespräch zu starten.",
+    "confidentialityGuarantee": "Ihre Gespräche und Daten bleiben streng vertraulich. Keine Verpflichtung, bis wir den nächsten Schritt vereinbart haben.",
+    "formName": "Name",
+    "formEmail": "E-Mail",
+    "formMessage": "Nachricht",
+    "sendLabel": "Senden",
+    "linkedIn": "LinkedIn",
+    "instagram": "Instagram",
+    "successTitle": "Nachricht gesendet",
+    "successMessage": "Wir melden uns so bald wie möglich.",
+    "sendAnotherMessage": "Weitere Nachricht senden"
+  },
+  "legal": {
+    "pageTitle": "Impressum",
+    "siteName": "North Coaching Performance",
+    "name": "Charles North",
+    "role": "Sportphysiotherapeut & Performance Coach",
+    "email": "northcoachingperf@gmail.com",
+    "registrationStatus": "Gewerbeanmeldung ausstehend."
+  },
+  "privacyPage": {
+    "title": "Datenschutz",
+    "lastUpdated": "Stand: März 2025",
+    "intro": "Über diese Website erhobene Daten werden ausschließlich zur Bearbeitung von Anfragen verwendet.",
+    "noThirdParty": "Daten werden nicht an Dritte weitergegeben und vertraulich behandelt.",
+    "deletionRequest": "Sie können jederzeit die Löschung Ihrer Daten verlangen. Kontakt:"
+  },
+  "termsPage": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Stand: März 2025",
+    "intro": "Mit der Nutzung dieser Website und der Anforderung von Leistungen bei North Coaching Performance akzeptieren Sie die folgenden Bedingungen. Die Leistungen werden im Rahmen eines professionellen Coachings erbracht; Umfang, Dauer und Zahlungsmodalitäten werden individuell vereinbart. Stornierung und Vertraulichkeit richten sich nach der jeweiligen Vereinbarung mit dem Kunden.",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "footer": {
+    "tagline": "North Coaching Performance — Präzision. Richtung. Resilienz.",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "Bedingungen",
+    "legal": "Impressum",
+    "disclaimer": "Die Inhalte dieser Website dienen ausschließlich zu Informations- und Coachingzwecken und ersetzen keine medizinische Beratung. Bei gesundheitlichen Fragen wenden Sie sich an eine qualifizierte Fachperson."
+  },
+  "offers": {
+    "premium": {
+      "raceWeekendBullet": "Support an Rennwochenenden (auf Anfrage)"
+    },
+    "ctaBook": "Call buchen",
+    "ctaProject": "Projekt besprechen"
+  },
+  "nav": {
+    "home": "Home",
+    "offers": "Angebote",
+    "about": "Über",
+    "programs": "Programme",
+    "booking": "Call buchen",
+    "contact": "Kontakt"
+  }
+}
