@@ -117,7 +117,7 @@ export function Header() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md md:hidden"
+              className="fixed inset-0 z-40 bg-charcoal-950 md:hidden"
               onClick={() => setMobileOpen(false)}
               aria-hidden
             />
@@ -126,7 +126,7 @@ export function Header() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.2 }}
-              className="fixed inset-0 z-50 flex h-full w-full flex-col gap-4 bg-black/95 backdrop-blur-md p-6 md:hidden"
+              className="fixed inset-0 z-50 flex h-full w-full flex-col gap-4 bg-charcoal-950 p-6 md:hidden"
               aria-label="Mobile navigation"
             >
               <div className="flex justify-end">
