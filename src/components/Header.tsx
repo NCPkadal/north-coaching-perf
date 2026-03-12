@@ -126,7 +126,7 @@ export function Header() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.2 }}
-              className="fixed right-0 top-0 z-50 flex h-full w-72 flex-col gap-4 border-l border-charcoal-800 bg-charcoal-900 p-6 md:hidden"
+              className="fixed right-0 top-0 z-50 flex h-full w-72 flex-col gap-4 border-l border-charcoal-700 bg-charcoal-950/95 backdrop-blur-md p-6 md:hidden"
               aria-label="Mobile navigation"
             >
               <div className="flex justify-end">
