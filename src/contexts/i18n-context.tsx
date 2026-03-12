@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext } from "react";
+import { createContext, useContext, useEffect } from "react";
 import type { Locale } from "@/lib/i18n";
 
 export type Messages = Record<string, unknown>;
@@ -21,6 +21,14 @@ export function I18nProvider({
   locale: Locale;
   messages: Messages;
 }) {
+  // Keep the <html lang="..."> attribute in sync with the active locale.
+  // This helps browsers and translators avoid incorrect auto-translation.
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = locale;
+    }
+  }, [locale]);
+
   return (
     <I18nContext.Provider value={{ locale, copy: messages }}>
       {children}
