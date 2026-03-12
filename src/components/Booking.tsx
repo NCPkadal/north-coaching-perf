@@ -111,7 +111,7 @@ export function Booking() {
             <p className="mt-2 text-silver-500">{booking.successMessage}</p>
             <Button
               variant="secondary"
-              className="mt-6"
+              className="mt-6 w-full sm:w-auto"
               onClick={() => setStatus("idle")}
             >
               {booking.submitAnotherRequest}

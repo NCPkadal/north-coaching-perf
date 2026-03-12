@@ -71,6 +71,7 @@ export function Hero() {
         >
           <Button
             size="lg"
+            className="w-full max-w-xs sm:w-auto"
             onClick={() => scrollTo("booking")}
             aria-label="Book a Discovery Call"
           >
@@ -79,6 +80,7 @@ export function Hero() {
           <Button
             variant="secondary"
             size="lg"
+            className="w-full max-w-xs sm:w-auto"
             onClick={() => scrollTo("programs")}
             aria-label="View Programs"
           >

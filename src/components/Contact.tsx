@@ -102,7 +102,7 @@ export function Contact() {
             <p className="mt-2 text-silver-500">{contact.successMessage}</p>
             <Button
               variant="secondary"
-              className="mt-6"
+              className="mt-6 w-full sm:w-auto"
               onClick={() => setStatus("idle")}
             >
               {contact.sendAnotherMessage}
@@ -158,7 +158,11 @@ export function Contact() {
               <p className="text-sm text-red-400">Something went wrong. Please try again.</p>
             )}
             <div className="flex flex-wrap items-center gap-6">
-              <Button type="submit" disabled={status === "sending"}>
+              <Button
+                type="submit"
+                className="w-full sm:w-auto"
+                disabled={status === "sending"}
+              >
                 {status === "sending" ? "Sending…" : contact.sendLabel}
               </Button>
               <div className="flex gap-4 text-sm text-silver-500">
