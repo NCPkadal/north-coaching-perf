@@ -117,7 +117,7 @@ export function Header() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-40 bg-charcoal-950/90 backdrop-blur-sm md:hidden"
+              className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md md:hidden"
               onClick={() => setMobileOpen(false)}
               aria-hidden
             />
