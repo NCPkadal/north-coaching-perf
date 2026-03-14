@@ -51,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen bg-charcoal-950 text-silver-100 page-bg bg-logo antialiased">
+      <body className="min-h-screen bg-charcoal-950 text-silver-100 antialiased">
         <GoogleTagManager />
         <GoogleAnalytics />
         {children}

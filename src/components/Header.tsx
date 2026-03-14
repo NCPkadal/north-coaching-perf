@@ -126,8 +126,8 @@ export function Header() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="fixed inset-0 z-[9998] md:hidden"
-                  style={{ background: "#000" }}
+                  className="fixed inset-0 z-[9998] bg-black md:hidden"
+                  style={{ backgroundColor: "#000", opacity: 1 }}
                   onClick={() => setMobileOpen(false)}
                   aria-hidden
                 />
@@ -136,13 +136,13 @@ export function Header() {
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
                   transition={{ type: "tween", duration: 0.2 }}
-                  className="fixed inset-0 z-[9999] flex flex-col md:hidden"
+                  className="fixed inset-0 z-[9999] flex flex-col bg-black md:hidden"
                   aria-label="Mobile navigation"
-                  style={{ background: "#0a0a0a" }}
+                  style={{ backgroundColor: "#000" }}
                 >
                   <div
-                    className="absolute inset-0"
-                    style={{ background: "#0a0a0a" }}
+                    className="absolute inset-0 bg-black"
+                    style={{ backgroundColor: "#000" }}
                     aria-hidden
                   />
                   <div className="relative z-10 flex h-full w-full flex-col gap-4 p-6">

@@ -92,7 +92,7 @@ export function Hero() {
             {hero.valueProposition}
           </motion.p>
           <motion.div
-            className="mt-14 flex flex-wrap gap-5"
+            className="mt-14 flex flex-wrap justify-center gap-5"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}

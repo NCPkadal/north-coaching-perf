@@ -17,11 +17,19 @@
     "title": "À propos",
     "founder": {
       "name": "Charles North",
-      "title": "Kinésithérapeute du sport & coach performance",
-      "location": "Suisse",
-      "bio": "Charles accompagne des athlètes et des dirigeants de haut niveau avec une approche structurée et fondée sur les preuves. Exigence, clarté et discrétion définissent l’expérience NCP."
+      "title": "Kinésithérapeute du sport & coach performance — Suisse",
+      "location": "",
+      "bio": "Charles accompagne des athlètes et des profils à haute performance qui recherchent une approche structurée et intelligente de la performance.",
+      "bioParagraphs": [
+        "Charles accompagne des athlètes et des profils à haute performance qui recherchent une approche structurée et intelligente de la performance.",
+        "Son travail associe analyse du mouvement, optimisation de l'entraînement et pratique fondée sur les preuves pour construire des stratégies de performance claires et durables.",
+        "Ces dernières années, il a travaillé avec des athlètes de niveau international et a été impliqué dans des événements sportifs nationaux et internationaux, en soutenant la performance, la préparation et la récupération en environnements exigeants.",
+        "L'approche reste simple : précision, structure et progrès mesurables.",
+        "À travers North Coaching Performance, Charles accompagne athlètes et dirigeants qui veulent plus que des programmes génériques — un partenariat structuré conçu pour améliorer la performance tout en réduisant le risque de blessure."
+      ]
     },
-    "credentialsTitle": "Formations et certifications",
+    "credentialsTitle": "Parcours",
+    "credentialsSummary": "Kinésithérapeute du sport et coach performance. J'ai accompagné des athlètes de niveau international ainsi que des évènements sportifs nationaux et internationaux.",
     "credentials": [
       {
         "period": "Sep 2025 – Aujourd'hui",
@@ -62,7 +70,7 @@
       },
       "build": {
         "title": "Construire",
-        "description": "Stratégie d’entraînement et de récupération individualisée, adaptée à votre calendrier et à vos contraintes."
+        "description": "Stratégie d'entraînement et de récupération individualisée, adaptée à votre calendrier et à vos contraintes."
       },
       "sustain": {
         "title": "Soutenir",

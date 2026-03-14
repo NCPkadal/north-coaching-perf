@@ -17,11 +17,19 @@
     "title": "Über",
     "founder": {
       "name": "Charles North",
-      "title": "Sportphysiotherapeut & Performance Coach",
-      "location": "Schweiz",
-      "bio": "Charles arbeitet mit Spitzensportler:innen und Führungskräften auf Basis einer evidenzbasierten, strukturierten Arbeitsweise. Hohe Standards, Messbarkeit und Diskretion prägen die Zusammenarbeit."
+      "title": "Sportphysiotherapeut & Performance Coach — Schweiz",
+      "location": "",
+      "bio": "Charles arbeitet mit Athlet:innen und leistungsorientierten Menschen, die einen strukturierten und durchdachten Zugang zur Performance suchen.",
+      "bioParagraphs": [
+        "Charles arbeitet mit Athlet:innen und leistungsorientierten Menschen, die einen strukturierten und durchdachten Zugang zur Performance suchen.",
+        "Seine Arbeit verbindet Bewegungsanalyse, Trainingsoptimierung und evidenzbasierte Praxis, um klare und nachhaltige Leistungsstrategien zu entwickeln.",
+        "In den vergangenen Jahren hat er mit Athlet:innen auf internationalem Niveau gearbeitet und war in nationale und internationale Sportveranstaltungen eingebunden – mit Fokus auf Performance, Vorbereitung und Regeneration in anspruchsvollen Umgebungen.",
+        "Der Ansatz bleibt einfach: Präzision, Struktur und messbarer Fortschritt.",
+        "Mit North Coaching Performance unterstützt Charles Athlet:innen und Führungskräfte, die mehr wollen als generische Programme – eine strukturierte Partnerschaft, die Leistung verbessert und Verletzungsrisiken reduziert."
+      ]
     },
-    "credentialsTitle": "Ausbildung & Zertifizierungen",
+    "credentialsTitle": "Hintergrund",
+    "credentialsSummary": "Sportphysiotherapeut und Performance Coach. Erfahrung mit Athlet:innen auf internationalem Niveau sowie mit nationalen und internationalen Sportveranstaltungen.",
     "credentials": [
       {
         "period": "Sep 2025 – Heute",

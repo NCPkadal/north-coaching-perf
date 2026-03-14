@@ -17,11 +17,19 @@
     "title": "About",
     "founder": {
       "name": "Charles North",
-      "title": "Sports Physiotherapist & Performance Coach",
-      "location": "Switzerland",
-      "bio": "Charles works with elite athletes and leaders using an evidence-based approach. High standards, measurable outcomes, and a discreet, results-driven partnership define the NCP experience."
+      "title": "Sports Physiotherapist & Performance Coach — Switzerland",
+      "location": "",
+      "bio": "Charles works with athletes and high-performing individuals seeking a structured and intelligent approach to performance.",
+      "bioParagraphs": [
+        "Charles works with athletes and high-performing individuals seeking a structured and intelligent approach to performance.",
+        "His work combines movement analysis, training optimization and evidence-based practice to build clear and sustainable performance strategies.",
+        "Over the past years, he has worked with international-level athletes and has been involved in national and international sporting events, supporting performance, preparation and recovery in demanding environments.",
+        "The approach remains simple: precision, structure and measurable progress.",
+        "Through North Coaching Performance, Charles supports athletes and leaders who want more than generic programs — a structured partnership designed to improve performance while reducing injury risk."
+      ]
     },
-    "credentialsTitle": "Credentials & training",
+    "credentialsTitle": "Background",
+    "credentialsSummary": "Sports physiotherapist and performance coach. Experience with international-level athletes and national and international sports events.",
     "credentials": [
       {
         "period": "Sep 2025 – Present",

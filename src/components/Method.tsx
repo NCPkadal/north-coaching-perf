@@ -36,10 +36,10 @@ export function Method() {
   return (
     <section
       id="method"
-      className="border-t border-slate-200 bg-white px-4 py-24 sm:px-6 lg:px-8"
+      className="relative border-t border-slate-200 bg-white px-4 py-24 sm:px-6 lg:px-8"
       aria-labelledby="method-heading"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="relative z-10 mx-auto max-w-6xl">
         <motion.div
           className="text-center"
           initial="hidden"

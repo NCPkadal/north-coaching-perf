@@ -159,7 +159,7 @@ export function Contact() {
             {status === "error" && (
               <p className="text-sm text-red-500">Something went wrong. Please try again.</p>
             )}
-            <div className="flex flex-wrap items-center gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-6 sm:justify-start">
               <Button
                 type="submit"
                 className="w-full bg-brand-blue text-white hover:bg-brand-blue-hover sm:w-auto"
