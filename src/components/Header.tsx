@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -15,7 +16,12 @@ const LOGO_SRC: string | null = "/brand/logo.png";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const { locale, copy } = useI18n();
   const site = copy.site as { name: string };
   const nav = copy.nav as Record<string, string>;
@@ -110,26 +116,37 @@ export function Header() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {mobileOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 z-40 bg-charcoal-950 md:hidden"
-              onClick={() => setMobileOpen(false)}
-              aria-hidden
-            />
-            <motion.nav
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "tween", duration: 0.2 }}
-              className="fixed inset-0 z-50 flex h-full w-full flex-col gap-4 bg-charcoal-950 p-6 md:hidden"
-              aria-label="Mobile navigation"
-            >
-              <div className="flex justify-end">
+      {/* Panneau qui s’ouvre au clic sur le burger (pas le bouton lui‑même) */}
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
+            {mobileOpen && (
+              <>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="fixed inset-0 z-[9998] md:hidden"
+                  style={{ background: "#000" }}
+                  onClick={() => setMobileOpen(false)}
+                  aria-hidden
+                />
+                <motion.nav
+                  initial={{ x: "100%" }}
+                  animate={{ x: 0 }}
+                  exit={{ x: "100%" }}
+                  transition={{ type: "tween", duration: 0.2 }}
+                  className="fixed inset-0 z-[9999] flex flex-col md:hidden"
+                  aria-label="Mobile navigation"
+                  style={{ background: "#0a0a0a" }}
+                >
+                  <div
+                    className="absolute inset-0"
+                    style={{ background: "#0a0a0a" }}
+                    aria-hidden
+                  />
+                  <div className="relative z-10 flex h-full w-full flex-col gap-4 p-6">
+                    <div className="flex justify-end">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -175,11 +192,14 @@ export function Header() {
                     </Link>
                   ))}
                 </div>
-              </div>
-            </motion.nav>
-          </>
+                  </div>
+                  </div>
+                </motion.nav>
+              </>
+            )}
+          </AnimatePresence>,
+          document.body
         )}
-      </AnimatePresence>
     </header>
   );
 }
