@@ -29,7 +29,7 @@ export function Hero() {
           alt=""
           fill
           priority
-          className="object-cover object-right"
+          className="object-cover object-center sm:object-right"
           style={{
             filter: "saturate(0.82) contrast(1.12)",
           }}
