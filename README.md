@@ -33,6 +33,30 @@ Open [http://localhost:3000](http://localhost:3000).
    const LOGO_SRC = "/logo.svg";
    ```
 
+## Google Tag Manager & GA4
+
+Le site envoie des événements au **dataLayer** pour GTM. Dans GTM :
+
+1. **Suivi de base (visites, durée, pages)**  
+   Crée une balise **« Google Analytics : Configuration GA4 »** :
+   - **ID de mesure** : ton ID GA4 (format `G-XXXXXXXXXX`).  
+     À récupérer dans [Analytics](https://analytics.google.com) → Admin → Flux de données → ton flux Web.
+   - Déclencheur : **Toutes les pages**.
+
+2. **Événements personnalisés (optionnel)**  
+   Pour suivre les soumissions de formulaire et les clics CTA, crée des balises **« Google Analytics : Événement GA4 »** :
+   - **ID de mesure** : le même que ci-dessus.
+   - **Nom de l’événement** : utilise exactement un des noms ci‑dessous.
+   - Déclencheur : **Événement personnalisé** avec le même nom.
+
+   | Nom de l’événement   | Quand il est envoyé              |
+   |----------------------|-----------------------------------|
+   | `discovery_form_submit` | Formulaire « Discovery Call » envoyé |
+   | `contact_form_submit`   | Formulaire Contact envoyé           |
+   | `cta_booking_click`     | Clic sur le bouton principal « Réserver » (hero) |
+
+   Paramètres optionnels envoyés : `form_name`, `cta_source` (pour filtrer dans GA4).
+
 ## Formulaires (Formspree)
 
 The “Request a Call” form stores submissions in **localStorage** (keys: `ncp-discovery-requests`, `ncp-contact-messages`) for development. To wire to email or CRM:

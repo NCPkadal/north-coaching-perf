@@ -4,7 +4,7 @@ import Script from "next/script";
 import { usePathname } from "next/navigation";
 import { useEffect, Suspense } from "react";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "";
+const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-9E9PGE42Z6";
 
 function sendPageView(path: string) {
   if (typeof window === "undefined" || !GA_ID || !window.gtag) return;

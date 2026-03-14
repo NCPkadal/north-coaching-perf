@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/contexts/i18n-context";
+import { gtmCtaBookingClick } from "@/lib/gtm";
 
 export function Hero() {
   const { copy } = useI18n();
@@ -72,7 +73,10 @@ export function Hero() {
           <Button
             size="lg"
             className="w-full max-w-xs sm:w-auto"
-            onClick={() => scrollTo("booking")}
+            onClick={() => {
+              gtmCtaBookingClick("hero");
+              scrollTo("booking");
+            }}
             aria-label="Book a Discovery Call"
           >
             {hero.ctaPrimary}

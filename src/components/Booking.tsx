@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/contexts/i18n-context";
 import { getBookingFormEndpoint, submitToFormspree } from "@/lib/formspree";
+import { gtmDiscoveryFormSubmit } from "@/lib/gtm";
 
 export interface DiscoveryFormData {
   name: string;
@@ -67,6 +68,7 @@ export function Booking() {
       }
       setForm(initialForm);
       setStatus("success");
+      gtmDiscoveryFormSubmit();
     } catch {
       setStatus("error");
     }

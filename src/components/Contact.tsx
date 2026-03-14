@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { useI18n } from "@/contexts/i18n-context";
 import { SITE_EMAIL, WHATSAPP_URL, LINKEDIN_URL } from "@/lib/site-config";
 import { getContactFormEndpoint, submitToFormspree } from "@/lib/formspree";
+import { gtmContactFormSubmit } from "@/lib/gtm";
 
 export function Contact() {
   const { copy } = useI18n();
@@ -41,6 +42,7 @@ export function Contact() {
       setEmail("");
       setMessage("");
       setStatus("success");
+      gtmContactFormSubmit();
     } catch {
       setStatus("error");
     }
