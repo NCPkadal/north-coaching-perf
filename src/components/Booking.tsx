@@ -77,7 +77,7 @@ export function Booking() {
   return (
     <section
       id="booking"
-      className="scroll-mt-20 border-t border-charcoal-800 px-4 py-20 sm:px-6 lg:px-8"
+      className="scroll-mt-20 border-t border-slate-200 bg-white px-4 py-24 sm:px-6 lg:px-8"
       aria-labelledby="booking-heading"
     >
       <div className="mx-auto max-w-2xl">
@@ -89,13 +89,13 @@ export function Booking() {
         >
           <h2
             id="booking-heading"
-            className="text-3xl font-bold tracking-tight text-silver-100 sm:text-4xl"
+            className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl"
           >
             {booking.title}
           </h2>
-          <p className="mt-4 text-silver-500">{booking.subtitle}</p>
-          <div className="mt-4 rounded-lg border border-charcoal-700 bg-charcoal-900/40 px-4 py-3 text-center">
-            <p className="text-sm font-medium text-silver-400">
+          <p className="mt-5 text-slate-600">{booking.subtitle}</p>
+          <div className="mt-5 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-center">
+            <p className="text-sm font-medium text-slate-600">
               {booking.confidentialityGuarantee}
             </p>
           </div>
@@ -105,12 +105,12 @@ export function Booking() {
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="mt-12 rounded-lg border border-charcoal-700 bg-charcoal-900/50 p-8 text-center"
+            className="mt-12 rounded-lg border border-slate-200 bg-slate-50 p-8 text-center"
           >
-            <h3 className="text-xl font-semibold text-silver-200">
+            <h3 className="text-xl font-semibold text-slate-900">
               {booking.successTitle}
             </h3>
-            <p className="mt-2 text-silver-500">{booking.successMessage}</p>
+            <p className="mt-2 text-slate-600">{booking.successMessage}</p>
             <Button
               variant="secondary"
               className="mt-6 w-full sm:w-auto"
@@ -129,7 +129,7 @@ export function Booking() {
           >
             <div className="grid gap-6 sm:grid-cols-2">
               <label className="block">
-                <span className="block text-sm font-medium text-silver-400">
+                <span className="block text-sm font-medium text-slate-700">
                   {booking.nameLabel}
                 </span>
                 <input
@@ -139,12 +139,12 @@ export function Booking() {
                   onChange={handleChange}
                   placeholder={booking.namePlaceholder}
                   required
-                  className="mt-2 w-full rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                  className="mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                   autoComplete="name"
                 />
               </label>
               <label className="block">
-                <span className="block text-sm font-medium text-silver-400">
+                <span className="block text-sm font-medium text-slate-700">
                   {booking.emailLabel}
                 </span>
                 <input
@@ -154,13 +154,13 @@ export function Booking() {
                   onChange={handleChange}
                   placeholder={booking.emailPlaceholder}
                   required
-                  className="mt-2 w-full rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                  className="mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                   autoComplete="email"
                 />
               </label>
             </div>
             <label className="block">
-              <span className="block text-sm font-medium text-silver-400">
+              <span className="block text-sm font-medium text-slate-700">
                 {booking.phoneLabel}
               </span>
               <input
@@ -169,12 +169,12 @@ export function Booking() {
                 value={form.phone}
                 onChange={handleChange}
                 placeholder={booking.phonePlaceholder}
-                className="mt-2 w-full rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                className="mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                 autoComplete="tel"
               />
             </label>
             <label className="block">
-              <span className="block text-sm font-medium text-silver-400">
+              <span className="block text-sm font-medium text-slate-700">
                 {booking.roleLabel}
               </span>
               <select
@@ -182,7 +182,7 @@ export function Booking() {
                 value={form.role}
                 onChange={handleChange}
                 required
-                className="mt-2 w-full rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                className="mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
               >
                 <option value="">{booking.roleSelectPlaceholder}</option>
                 {booking.roleOptions.map((opt) => (
@@ -193,7 +193,7 @@ export function Booking() {
               </select>
             </label>
             <label className="block">
-              <span className="block text-sm font-medium text-silver-400">
+              <span className="block text-sm font-medium text-slate-700">
                 {booking.goalsLabel}
               </span>
               <textarea
@@ -202,12 +202,12 @@ export function Booking() {
                 onChange={handleChange}
                 placeholder={booking.goalsPlaceholder}
                 rows={3}
-                className="mt-2 w-full resize-y rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                className="mt-2 w-full resize-y rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
               />
             </label>
             <div className="grid gap-6 sm:grid-cols-2">
               <label className="block">
-                <span className="block text-sm font-medium text-silver-400">
+                <span className="block text-sm font-medium text-slate-700">
                   {booking.availabilityLabel}
                 </span>
                 <input
@@ -216,11 +216,11 @@ export function Booking() {
                   value={form.availability}
                   onChange={handleChange}
                   placeholder={booking.availabilityPlaceholder}
-                  className="mt-2 w-full rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                  className="mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                 />
               </label>
               <label className="block">
-                <span className="block text-sm font-medium text-silver-400">
+                <span className="block text-sm font-medium text-slate-700">
                   {booking.timezoneLabel}
                 </span>
                 <input
@@ -229,7 +229,7 @@ export function Booking() {
                   value={form.timezone}
                   onChange={handleChange}
                   placeholder={booking.timezonePlaceholder}
-                  className="mt-2 w-full rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                  className="mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                 />
               </label>
             </div>
@@ -241,7 +241,7 @@ export function Booking() {
             <Button
               type="submit"
               size="lg"
-              className="w-full sm:w-auto"
+              className="w-full bg-brand-blue text-white hover:bg-brand-blue-hover sm:w-auto"
               disabled={status === "submitting"}
             >
               {status === "submitting" ? "Sending…" : booking.submitLabel}

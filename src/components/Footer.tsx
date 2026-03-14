@@ -10,15 +10,15 @@ export function Footer() {
   const base = `/${locale}`;
   return (
     <footer
-      className="border-t border-charcoal-800 bg-charcoal-900/30 px-4 py-12 sm:px-6 lg:px-8"
+      className="border-t border-slate-200 bg-white px-4 py-14 sm:px-6 lg:px-8"
       role="contentinfo"
     >
       <div className="mx-auto max-w-6xl">
-        <p className="text-center text-sm text-silver-500">{footer.tagline}</p>
+        <p className="text-center text-sm text-slate-600">{footer.tagline}</p>
         <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
           <a
             href={`mailto:${SITE_EMAIL}`}
-            className="text-silver-500 transition-colors hover:text-silver-300"
+            className="text-slate-600 transition-colors hover:text-brand-blue"
           >
             {SITE_EMAIL}
           </a>
@@ -26,7 +26,7 @@ export function Footer() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-silver-500 transition-colors hover:text-silver-300"
+            className="text-slate-600 transition-colors hover:text-brand-blue"
           >
             WhatsApp +33 6 36 98 08 30
           </a>
@@ -37,24 +37,24 @@ export function Footer() {
         >
           <Link
             href={`${base}/privacy`}
-            className="text-silver-500 hover:text-silver-300 focus:outline-none focus:ring-2 focus:ring-silver-500 focus:ring-offset-2 focus:ring-offset-charcoal-900"
+            className="text-slate-600 hover:text-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 focus:ring-offset-white"
           >
             {footer.privacy}
           </Link>
           <Link
             href={`${base}/terms`}
-            className="text-silver-500 hover:text-silver-300 focus:outline-none focus:ring-2 focus:ring-silver-500 focus:ring-offset-2 focus:ring-offset-charcoal-900"
+            className="text-slate-600 hover:text-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 focus:ring-offset-white"
           >
             {footer.terms}
           </Link>
           <Link
             href={`${base}/legal`}
-            className="text-silver-500 hover:text-silver-300 focus:outline-none focus:ring-2 focus:ring-silver-500 focus:ring-offset-2 focus:ring-offset-charcoal-900"
+            className="text-slate-600 hover:text-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 focus:ring-offset-white"
           >
             {footer.legal}
           </Link>
         </nav>
-        <p className="mt-6 text-center text-xs leading-relaxed text-charcoal-500">
+        <p className="mt-6 text-center text-xs leading-relaxed text-slate-500">
           {footer.disclaimer}
         </p>
       </div>

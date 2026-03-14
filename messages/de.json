@@ -23,12 +23,36 @@
     },
     "credentialsTitle": "Ausbildung & Zertifizierungen",
     "credentials": [
-      { "period": "Sep 2025 – Heute", "title": "Hintsa Performance Coach Zertifizierung", "organisation": "" },
-      { "period": "Jan 2023 – Jan 2024", "title": "Evidence-Based Praxis Training", "organisation": "Berner Fachhochschule, Schweiz" },
-      { "period": "Feb 2023", "title": "Sportphysiotherapeut", "organisation": "K-LYF" },
-      { "period": "Nov 2021 – Juni 2022", "title": "Sportphysiotherapeut", "organisation": "Kiné Pro-Sport, Strasbourg" },
-      { "period": "Juni 2022", "title": "Dry needling", "organisation": "IMTT, Zürich" },
-      { "period": "Jan 2022", "title": "Athletiktraining Fußball", "organisation": "Paolo Rongoni — ehem. Athletiktrainer, Olympique Lyonnais, OM, AS Roma" }
+      {
+        "period": "Sep 2025 – Heute",
+        "title": "Hintsa Performance Coach Zertifizierung",
+        "organisation": ""
+      },
+      {
+        "period": "Jan 2023 – Jan 2024",
+        "title": "Evidence-Based Praxis Training",
+        "organisation": "Berner Fachhochschule, Schweiz"
+      },
+      {
+        "period": "Feb 2023",
+        "title": "Sportphysiotherapeut",
+        "organisation": "K-LYF"
+      },
+      {
+        "period": "Nov 2021 – Juni 2022",
+        "title": "Sportphysiotherapeut",
+        "organisation": "Kiné Pro-Sport, Strasbourg"
+      },
+      {
+        "period": "Juni 2022",
+        "title": "Dry needling",
+        "organisation": "IMTT, Zürich"
+      },
+      {
+        "period": "Jan 2022",
+        "title": "Athletiktraining Fußball",
+        "organisation": "Paolo Rongoni — ehem. Athletiktrainer, Olympique Lyonnais, OM, AS Roma"
+      }
     ],
     "pillars": {
       "title": "Unser Ansatz",
@@ -66,6 +90,11 @@
   "programs": {
     "title": "Programme",
     "subtitle": "Strukturierte Betreuung – abgestimmt auf Ihr gewünschtes Betreuungsniveau.",
+    "serviceFocus": [
+      "Bewegungsanalyse",
+      "Trainingsoptimierung",
+      "Performance-Coaching"
+    ],
     "tiers": [
       {
         "id": "athlete-performance",
@@ -169,7 +198,8 @@
       "whatsIncluded": "Inhalte",
       "expectedOutcomes": "Erwartete Ergebnisse",
       "price": "Investition",
-      "popular": "Beliebt"
+      "popular": "Beliebt",
+      "details": "Details"
     },
     "ctaTitle": "Bereit für den nächsten Schritt?",
     "ctaButton": "Kennenlern-Call buchen"
@@ -185,7 +215,11 @@
     "phoneLabel": "Telefon / WhatsApp",
     "phonePlaceholder": "+41 00 000 00 00",
     "roleLabel": "Ich bin",
-    "roleOptions": ["Athlet:in", "Führungskraft", "Andere"],
+    "roleOptions": [
+      "Athlet:in",
+      "Führungskraft",
+      "Andere"
+    ],
     "goalsLabel": "Ziele (kurz)",
     "goalsPlaceholder": "Was möchten Sie verbessern?",
     "availabilityLabel": "Verfügbarkeit",
@@ -257,5 +291,26 @@
     "programs": "Programme",
     "booking": "Call buchen",
     "contact": "Kontakt"
+  },
+  "method": {
+    "title": "Die Methode",
+    "subtitle": "Drei Säulen. Ein System.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Bewegungsanalyse",
+        "description": "Bewegungsqualität, Muster und Limitierungen analysieren, um präzise Hebel für Fortschritt zu definieren."
+      },
+      {
+        "number": "02",
+        "title": "Trainingsoptimierung",
+        "description": "Einen Trainingsplan entwickeln, der zu Kalender, Belastbarkeit und Regeneration passt—und ihn laufend anpassen."
+      },
+      {
+        "number": "03",
+        "title": "Performance-Coaching",
+        "description": "Den Prozess coachen: Umsetzung, Entscheidungen, Resilienz und Performance unter Druck."
+      }
+    ]
   }
 }

@@ -78,12 +78,12 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-md px-3 py-2 text-sm text-silver-400 transition-colors hover:bg-charcoal-800 hover:text-silver-200 focus-visible:bg-charcoal-800 focus-visible:text-silver-200"
+              className="rounded-md px-3 py-2 text-sm text-silver-400 transition-colors hover:bg-charcoal-800 hover:text-silver-200 hover:text-brand-blue focus-visible:bg-charcoal-800 focus-visible:text-silver-200"
             >
               {link.label}
             </Link>
           ))}
-          <Button asChild size="sm" className="ml-2">
+          <Button asChild size="sm" className="ml-2 bg-brand-blue text-white hover:bg-brand-blue-hover">
             <Link href={`${base}/#contact`}>{nav.booking}</Link>
           </Button>
           <div className="ml-4 flex items-center gap-1 text-xs text-silver-500">
@@ -167,7 +167,7 @@ export function Header() {
                     {link.label}
                   </Link>
                 ))}
-                <Button asChild className="mt-4">
+                <Button asChild className="mt-4 bg-brand-blue text-white hover:bg-brand-blue-hover">
                   <Link
                     href={`${base}/#contact`}
                     onClick={() => setMobileOpen(false)}

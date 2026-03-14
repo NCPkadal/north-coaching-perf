@@ -23,12 +23,36 @@
     },
     "credentialsTitle": "Credentials & training",
     "credentials": [
-      { "period": "Sep 2025 – Present", "title": "Hintsa Performance Coach Certification", "organisation": "" },
-      { "period": "Jan 2023 – Jan 2024", "title": "Evidence-Based Praxis Training", "organisation": "Berner Fachhochschule, Switzerland" },
-      { "period": "Feb 2023", "title": "Sports physiotherapist", "organisation": "K-LYF" },
-      { "period": "Nov 2021 – Jun 2022", "title": "Sports physiotherapist", "organisation": "Kiné Pro-Sport, Strasbourg" },
-      { "period": "Jun 2022", "title": "Dry needling", "organisation": "IMTT, Zurich" },
-      { "period": "Jan 2022", "title": "Athletic training (football)", "organisation": "Paolo Rongoni — former Athletic Trainer, Olympique Lyonnais, Olympique de Marseille, AS Roma" }
+      {
+        "period": "Sep 2025 – Present",
+        "title": "Hintsa Performance Coach Certification",
+        "organisation": ""
+      },
+      {
+        "period": "Jan 2023 – Jan 2024",
+        "title": "Evidence-Based Praxis Training",
+        "organisation": "Berner Fachhochschule, Switzerland"
+      },
+      {
+        "period": "Feb 2023",
+        "title": "Sports physiotherapist",
+        "organisation": "K-LYF"
+      },
+      {
+        "period": "Nov 2021 – Jun 2022",
+        "title": "Sports physiotherapist",
+        "organisation": "Kiné Pro-Sport, Strasbourg"
+      },
+      {
+        "period": "Jun 2022",
+        "title": "Dry needling",
+        "organisation": "IMTT, Zurich"
+      },
+      {
+        "period": "Jan 2022",
+        "title": "Athletic training (football)",
+        "organisation": "Paolo Rongoni — former Athletic Trainer, Olympique Lyonnais, Olympique de Marseille, AS Roma"
+      }
     ],
     "pillars": {
       "title": "Our approach",
@@ -66,6 +90,11 @@
   "programs": {
     "title": "Programs",
     "subtitle": "Structured support, matched to your level of involvement.",
+    "serviceFocus": [
+      "Movement Analysis",
+      "Training Optimisation",
+      "Performance Coaching"
+    ],
     "tiers": [
       {
         "id": "athlete-performance",
@@ -169,7 +198,8 @@
       "whatsIncluded": "What's included",
       "expectedOutcomes": "Expected outcomes",
       "price": "Investment",
-      "popular": "Popular"
+      "popular": "Popular",
+      "details": "Details"
     },
     "ctaTitle": "Ready to take the next step?",
     "ctaButton": "Book a Discovery Call"
@@ -185,7 +215,11 @@
     "phoneLabel": "Phone / WhatsApp",
     "phonePlaceholder": "+41 00 000 00 00",
     "roleLabel": "I am",
-    "roleOptions": ["Athlete", "Leader", "Other"],
+    "roleOptions": [
+      "Athlete",
+      "Leader",
+      "Other"
+    ],
     "goalsLabel": "Goals (brief)",
     "goalsPlaceholder": "What do you want to achieve?",
     "availabilityLabel": "Availability",
@@ -257,5 +291,26 @@
     "programs": "Programs",
     "booking": "Book a Call",
     "contact": "Contact"
+  },
+  "method": {
+    "title": "The Method",
+    "subtitle": "Three pillars. One system.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Movement Analysis",
+        "description": "Assess movement quality, patterns and constraints to define precise levers for progress."
+      },
+      {
+        "number": "02",
+        "title": "Training Optimisation",
+        "description": "Build a training plan that fits your calendar, load capacity and recovery—then iterate."
+      },
+      {
+        "number": "03",
+        "title": "Performance Coaching",
+        "description": "Coach the process: execution, decision-making, resilience and performance under pressure."
+      }
+    ]
   }
 }

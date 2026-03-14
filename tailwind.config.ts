@@ -36,6 +36,11 @@ const config: Config = {
           100: "#f4f4f5",
           50: "#fafafa",
         },
+        brand: {
+          blue: "#3b82f6",
+          "blue-hover": "#2563eb",
+          "blue-muted": "rgba(59, 130, 246, 0.12)",
+        },
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],

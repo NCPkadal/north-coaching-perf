@@ -23,12 +23,36 @@
     },
     "credentialsTitle": "Formations et certifications",
     "credentials": [
-      { "period": "Sep 2025 – Aujourd'hui", "title": "Certification Hintsa Performance Coach", "organisation": "" },
-      { "period": "Janv 2023 – Janv 2024", "title": "Evidence-Based Praxis Training", "organisation": "Berner Fachhochschule, Suisse" },
-      { "period": "Fév 2023", "title": "Kinésithérapeute du sport", "organisation": "K-LYF" },
-      { "period": "Nov 2021 – Juin 2022", "title": "Kinésithérapeute du sport", "organisation": "Kiné Pro-Sport, Strasbourg" },
-      { "period": "Juin 2022", "title": "Dry needling", "organisation": "IMTT, Zurich" },
-      { "period": "Janv 2022", "title": "Préparation physique football", "organisation": "Paolo Rongoni — ancien préparateur physique, Olympique Lyonnais, OM, AS Roma" }
+      {
+        "period": "Sep 2025 – Aujourd'hui",
+        "title": "Certification Hintsa Performance Coach",
+        "organisation": ""
+      },
+      {
+        "period": "Janv 2023 – Janv 2024",
+        "title": "Evidence-Based Praxis Training",
+        "organisation": "Berner Fachhochschule, Suisse"
+      },
+      {
+        "period": "Fév 2023",
+        "title": "Kinésithérapeute du sport",
+        "organisation": "K-LYF"
+      },
+      {
+        "period": "Nov 2021 – Juin 2022",
+        "title": "Kinésithérapeute du sport",
+        "organisation": "Kiné Pro-Sport, Strasbourg"
+      },
+      {
+        "period": "Juin 2022",
+        "title": "Dry needling",
+        "organisation": "IMTT, Zurich"
+      },
+      {
+        "period": "Janv 2022",
+        "title": "Préparation physique football",
+        "organisation": "Paolo Rongoni — ancien préparateur physique, Olympique Lyonnais, OM, AS Roma"
+      }
     ],
     "pillars": {
       "title": "Notre approche",
@@ -66,6 +90,11 @@
   "programs": {
     "title": "Programmes",
     "subtitle": "Un accompagnement structuré, selon votre niveau d’implication.",
+    "serviceFocus": [
+      "Analyse du mouvement",
+      "Optimisation de l'entraînement",
+      "Coaching performance"
+    ],
     "tiers": [
       {
         "id": "athlete-performance",
@@ -169,7 +198,8 @@
       "whatsIncluded": "Contenu",
       "expectedOutcomes": "Résultats attendus",
       "price": "Investissement",
-      "popular": "Populaire"
+      "popular": "Populaire",
+      "details": "Détails"
     },
     "ctaTitle": "Prêt à avancer ?",
     "ctaButton": "Réserver un appel découverte"
@@ -185,7 +215,11 @@
     "phoneLabel": "Téléphone / WhatsApp",
     "phonePlaceholder": "+41 00 000 00 00",
     "roleLabel": "Je suis",
-    "roleOptions": ["Athlète", "Leader", "Autre"],
+    "roleOptions": [
+      "Athlète",
+      "Leader",
+      "Autre"
+    ],
     "goalsLabel": "Objectifs (bref)",
     "goalsPlaceholder": "Ce que vous souhaitez améliorer ou structurer",
     "availabilityLabel": "Disponibilités",
@@ -257,5 +291,26 @@
     "programs": "Programmes",
     "booking": "Réserver un appel",
     "contact": "Contact"
+  },
+  "method": {
+    "title": "La méthode",
+    "subtitle": "3 piliers. Un système.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Analyse du mouvement",
+        "description": "Analyser la qualité du mouvement, les schémas et les contraintes pour identifier des leviers précis."
+      },
+      {
+        "number": "02",
+        "title": "Optimisation de l'entraînement",
+        "description": "Construire un plan d’entraînement adapté à votre agenda, votre charge et votre récupération—puis ajuster."
+      },
+      {
+        "number": "03",
+        "title": "Coaching performance",
+        "description": "Coacher le processus : exécution, prises de décision, résilience et performance sous pression."
+      }
+    ]
   }
 }

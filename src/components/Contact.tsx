@@ -51,7 +51,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-20 border-t border-charcoal-800 px-4 py-20 sm:px-6 lg:px-8"
+      className="scroll-mt-20 border-t border-slate-200 bg-slate-50 px-4 py-24 sm:px-6 lg:px-8"
       aria-labelledby="contact-heading"
     >
       <div className="mx-auto max-w-2xl">
@@ -63,19 +63,19 @@ export function Contact() {
         >
           <h2
             id="contact-heading"
-            className="text-3xl font-bold tracking-tight text-silver-100 sm:text-4xl"
+            className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl"
           >
             {contact.title}
           </h2>
-          <p className="mt-4 text-silver-500">{contact.subtitle}</p>
-          <div className="mx-auto mt-6 flex max-w-lg items-center justify-center gap-2 rounded-lg border border-charcoal-700 bg-charcoal-900/40 px-4 py-3">
-            <Lock className="h-4 w-4 shrink-0 text-silver-500" />
-            <p className="text-sm text-silver-400">{contact.confidentialityGuarantee}</p>
+          <p className="mt-5 text-slate-600">{contact.subtitle}</p>
+          <div className="mx-auto mt-6 flex max-w-lg items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3">
+            <Lock className="h-4 w-4 shrink-0 text-slate-500" />
+            <p className="text-sm text-slate-600">{contact.confidentialityGuarantee}</p>
           </div>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm">
             <a
               href={`mailto:${SITE_EMAIL}`}
-              className="flex items-center gap-2 text-silver-400 transition-colors hover:text-silver-200"
+              className="flex items-center gap-2 text-slate-600 transition-colors hover:text-brand-blue"
             >
               <Mail className="h-4 w-4" />
               <span>{SITE_EMAIL}</span>
@@ -84,7 +84,7 @@ export function Contact() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-silver-400 transition-colors hover:text-silver-200"
+              className="flex items-center gap-2 text-slate-600 transition-colors hover:text-brand-blue"
             >
               <MessageCircle className="h-4 w-4" />
               <span>WhatsApp +33 6 36 98 08 30</span>
@@ -96,15 +96,15 @@ export function Contact() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="mt-12 rounded-lg border border-charcoal-700 bg-charcoal-900/50 p-8 text-center"
+            className="mt-12 rounded-lg border border-slate-200 bg-white p-8 text-center"
           >
-            <h3 className="text-xl font-semibold text-silver-200">
+            <h3 className="text-xl font-semibold text-slate-900">
               {contact.successTitle}
             </h3>
-            <p className="mt-2 text-silver-500">{contact.successMessage}</p>
+            <p className="mt-2 text-slate-600">{contact.successMessage}</p>
             <Button
               variant="secondary"
-              className="mt-6 w-full sm:w-auto"
+              className="mt-6 w-full border-slate-300 text-slate-800 hover:bg-slate-100 sm:w-auto"
               onClick={() => setStatus("idle")}
             >
               {contact.sendAnotherMessage}
@@ -120,7 +120,7 @@ export function Contact() {
           >
             <div className="grid gap-6 sm:grid-cols-2">
               <label className="block">
-                <span className="block text-sm font-medium text-silver-400">
+                <span className="block text-sm font-medium text-slate-700">
                   {contact.formName}
                 </span>
                 <input
@@ -128,11 +128,11 @@ export function Contact() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="mt-2 w-full rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                  className="mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                 />
               </label>
               <label className="block">
-                <span className="block text-sm font-medium text-silver-400">
+                <span className="block text-sm font-medium text-slate-700">
                   {contact.formEmail}
                 </span>
                 <input
@@ -140,12 +140,12 @@ export function Contact() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="mt-2 w-full rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                  className="mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                 />
               </label>
             </div>
             <label className="block">
-              <span className="block text-sm font-medium text-silver-400">
+              <span className="block text-sm font-medium text-slate-700">
                 {contact.formMessage}
               </span>
               <textarea
@@ -153,27 +153,27 @@ export function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 rows={4}
-                className="mt-2 w-full resize-y rounded-md border border-charcoal-600 bg-charcoal-900 px-4 py-3 text-silver-200 placeholder:text-charcoal-500 focus:border-silver-500 focus:outline-none focus:ring-1 focus:ring-silver-500"
+                className="mt-2 w-full resize-y rounded-md border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
               />
             </label>
             {status === "error" && (
-              <p className="text-sm text-red-400">Something went wrong. Please try again.</p>
+              <p className="text-sm text-red-500">Something went wrong. Please try again.</p>
             )}
             <div className="flex flex-wrap items-center gap-6">
               <Button
                 type="submit"
-                className="w-full sm:w-auto"
+                className="w-full bg-brand-blue text-white hover:bg-brand-blue-hover sm:w-auto"
                 disabled={status === "sending"}
               >
                 {status === "sending" ? "Sending…" : contact.sendLabel}
               </Button>
-              <div className="flex gap-4 text-sm text-silver-500">
+              <div className="flex gap-4 text-sm text-slate-500">
                 {LINKEDIN_URL && (
                   <a
                     href={LINKEDIN_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-silver-300 focus:outline-none focus:ring-2 focus:ring-silver-500 focus:ring-offset-2 focus:ring-offset-charcoal-900"
+                    className="hover:text-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 focus:ring-offset-white"
                   >
                     {contact.linkedIn}
                   </a>

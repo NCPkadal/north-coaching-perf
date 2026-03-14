@@ -31,7 +31,7 @@ export function WhyNCP() {
   return (
     <section
       id="why-ncp"
-      className="scroll-mt-24 border-t border-charcoal-800 px-4 py-16 sm:px-6 lg:px-8"
+      className="scroll-mt-20 border-t border-slate-200 bg-slate-50 px-4 py-20 sm:px-6 lg:px-8"
       aria-labelledby="why-ncp-heading"
     >
       <div className="mx-auto max-w-6xl">
@@ -44,7 +44,7 @@ export function WhyNCP() {
         >
           <motion.h2
             id="why-ncp-heading"
-            className="text-3xl font-semibold tracking-tight text-silver-100 sm:text-4xl"
+            className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl"
             variants={item}
           >
             {whyNcp.title}
@@ -52,7 +52,7 @@ export function WhyNCP() {
         </motion.div>
 
         <motion.div
-          className="mt-10 grid gap-6 sm:grid-cols-3"
+          className="mt-14 grid gap-8 sm:grid-cols-3"
           variants={container}
           initial="hidden"
           whileInView="show"
@@ -62,19 +62,19 @@ export function WhyNCP() {
             const Icon = iconMap[index as 0 | 1 | 2] ?? ShieldCheck;
             return (
               <motion.div key={entry.title} variants={item}>
-                <Card className="h-full border-charcoal-700 bg-charcoal-900/60">
+                <Card className="h-full border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md">
                   <CardHeader>
                     <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-charcoal-600 bg-charcoal-800 text-silver-300">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-blue-muted text-brand-blue">
                         <Icon className="h-5 w-5" />
                       </div>
-                      <CardTitle className="text-lg text-silver-50">
+                      <CardTitle className="text-lg font-medium text-slate-900">
                         {entry.title}
                       </CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <p className="text-sm text-silver-400">{entry.description}</p>
+                    <p className="text-sm leading-relaxed text-slate-600">{entry.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
