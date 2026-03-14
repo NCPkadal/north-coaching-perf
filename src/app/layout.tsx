@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GoogleTagManager } from "@/components/GoogleTagManager";
 
 const siteName = "North Coaching Performance";
 const tagline = "Precision. Direction. Resilience.";
@@ -50,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="min-h-screen bg-charcoal-950 text-silver-100 page-bg bg-logo antialiased">
+        <GoogleTagManager />
         {children}
       </body>
     </html>
