@@ -27,12 +27,13 @@ export function Header() {
   const nav = copy.nav as Record<string, string>;
 
   const base = `/${locale}`;
-  const navLinks = [
-    { href: base, label: nav.home },
-    { href: `${base}/offres`, label: nav.offers },
-    { href: `${base}/#about`, label: nav.about },
-    { href: `${base}/#programs`, label: nav.programs },
-    { href: `${base}/#contact`, label: nav.contact },
+  const navLinks: { id: string; href: string; label: string }[] = [
+    { id: "home", href: base, label: nav.home },
+    // Offres / Offers : scroll vers la section programmes (même cible que Programs, mais clé React unique)
+    { id: "offers", href: `${base}/#programs`, label: nav.offers },
+    { id: "about", href: `${base}/#about`, label: nav.about },
+    { id: "programs", href: `${base}/#programs`, label: nav.programs },
+    { id: "contact", href: `${base}/#contact`, label: nav.contact },
   ];
 
   return (
@@ -76,7 +77,7 @@ export function Header() {
         >
           {navLinks.map((link) => (
             <Link
-              key={link.href}
+              key={link.id}
               href={link.href}
               className="rounded-md px-3 py-2 text-sm text-silver-400 transition-colors hover:bg-charcoal-800 hover:text-silver-200 hover:text-brand-blue focus-visible:bg-charcoal-800 focus-visible:text-silver-200"
             >
@@ -159,7 +160,7 @@ export function Header() {
               <div className="flex flex-col gap-2">
                 {navLinks.map((link) => (
                   <Link
-                    key={link.href}
+                    key={link.id}
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
                     className="rounded-md px-3 py-2 text-silver-200 hover:bg-charcoal-800"
